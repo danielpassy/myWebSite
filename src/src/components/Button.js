@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-function Footer(props){
+function Butoon(props){
 
 
     return(
         <div>
-            footer
+            button
         </div>
     )
 }
 
-export default Footer;
+export default Butoon;
