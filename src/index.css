@@ -53,6 +53,31 @@ a {
     font-size: 25px
   }
 
+/*  NavBar */
+.mobileNav{
+  display: none !important;
+}
+.menuNav{
+  width:35px;
+}
+
+.dropDownNav{
+  padding: 3vh 10vw 3vh 0vh;
+}
+.dropDownNav > *{
+  padding: 3vh 10vw 3vh 0vh;
+}
+
+@media screen and (max-width:776px){
+  .mobileNav{
+    display:block !important;
+  }
+  .desktopNav {
+    display:none !important;
+  }
+}
+
+
 .borderNAVLangBTN {
   border: 2px solid !important;
 }

@@ -6,7 +6,7 @@ import MainView from './src/mainView'
 import ContatoView from './src/contatoView'
 import ProjectView from './src/projectView'
 import CurriculoView from './src/curriculoView'
-import NavBar from './src/components/NavBar'
+import NavBar from './src/components/navBar'
 import Footer from './src/components/Footer'
 
 

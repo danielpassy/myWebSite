@@ -1,6 +1,11 @@
 import { React, useContext, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { LanguageContext } from '../util/context'
+import { Button, Collapse } from 'react-bootstrap'
+
+
+
+
 
 
 function NavBar(props) {
@@ -8,19 +13,19 @@ function NavBar(props) {
     const [hover, setHover] = useState(null)
     const [language, setLanguage] = useState(null)
     const LanguageStatus = useContext(LanguageContext)
+    const [open, setOpen] = useState(false);
+
+
+
 
     useEffect(() => {
         setLanguage(LanguageStatus.language);
     }, [LanguageStatus.language])
 
-
-
-
-
     return (
         <div className='p-3 navBar '>
             <div className="row justify-content-between">
-                <div className="col-10 col-lg-11 row pt-2">
+                <div className="col-10 col-lg-11 row pt-2 desktopNav">
                     <Link className={'col ' + (hover === 'flex home' ? "hovered" : [])} to="/"
                         onMouseEnter={() => setHover('home')}
                         onMouseLeave={() => setHover(false)}>
@@ -43,13 +48,46 @@ function NavBar(props) {
                     </Link>
                 </div>
             </div>
+
+
+            <div className="col-10 col-lg-11 row pt-2 mobileNav">
+                <div className="hovered menuNav" 
+                onClick={() => setOpen(!open)}
+                    aria-controls="example-collapse-text"
+                    aria-expanded={open}
+                >
+                    Menu
+                </div>
+                <Collapse in={open}>
+                    <div id="example-collapse-text position-absolute">
+                        <div className="d-flex flex-column dropDownNav">
+                            <Link className={' ' + (hover === ' projetos' ? "hovered" : [])} to="/projetos"
+                                onMouseEnter={() => setHover('projetos')}
+                                onMouseLeave={() => setHover(false)}>
+                                Projetos
+                        </Link>
+                            <Link className={' ' + (hover === ' CV' ? "hovered" : [])} to="/curriculo"
+                                onMouseEnter={() => setHover('CV')}
+                                onMouseLeave={() => setHover(false)}>
+                                CV
+                        </Link>
+                            <Link className={' ' + (hover === 'contato' ? "hovered" : [])} to="/contato"
+                                onMouseEnter={() => setHover('contato')}
+                                onMouseLeave={() => setHover(false)}>
+                                Contato
+                        </Link>
+                        </div>
+                    </div>
+                </Collapse>
+
+            </div>
             <div className="langBAR">
                 <span onClick={() => LanguageStatus.changeLanguage(!language)}
-                    className={'border-dark p-2 borderNAVLangBTN ' + (language ? 'selectedLan': '')}>
+                    className={'border-dark p-2 borderNAVLangBTN ' + (language ? 'selectedLan' : '')}>
                     PT
                     </span>
                 <span onClick={() => LanguageStatus.changeLanguage(!language)}
-                    className={'border-dark p-2 borderNAVLangBTN ' + (language ?  '': 'selectedLan')}>
+                    className={'border-dark p-2 borderNAVLangBTN ' + (language ? '' : 'selectedLan')}>
                     EN
                     </span>
             </div>
