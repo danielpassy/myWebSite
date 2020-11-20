@@ -89,6 +89,16 @@ a {
 }
 
 
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
 .hovered::after {
   color:white;
   background-image: url(https://eugeniadurante.com/assets/img/link-underline.png);
