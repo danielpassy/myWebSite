@@ -26,22 +26,22 @@ function NavBar(props) {
         <div className='p-3 navBar '>
             <div className="row justify-content-between">
                 <div className="col-10 col-lg-11 row pt-2 desktopNav">
-                    <Link className={'col ' + (hover === 'flex home' ? "hovered" : [])} to="/"
+                    <Link className={'col center hardCodeHOME ' + (hover === 'home' ? "hovered" : [])} to="/"
                         onMouseEnter={() => setHover('home')}
                         onMouseLeave={() => setHover(false)}>
-                        Home
+                          Home
                     </Link>
-                    <Link className={'col ' + (hover === ' flex projetos' ? "hovered" : [])} to="/projetos"
+                    <Link className={'col center ' + (hover === 'projetos' ? "hovered" : [])} to="/projetos"
                         onMouseEnter={() => setHover('projetos')}
                         onMouseLeave={() => setHover(false)}>
                         Projetos
                     </Link>
-                    <Link className={'col ' + (hover === ' flex CV' ? "hovered" : [])} to="/curriculo"
+                    <Link className={'col center hardCodeCV ' + (hover === 'CV' ? "hovered" : [])} to="/curriculo"
                         onMouseEnter={() => setHover('CV')}
                         onMouseLeave={() => setHover(false)}>
                         CV
                     </Link>
-                    <Link className={'col ' + (hover === 'contato' ? "hovered" : [])} to="/contato"
+                    <Link className={'col center ' + (hover === 'contato' ? "hovered" : [])} to="/contato"
                         onMouseEnter={() => setHover('contato')}
                         onMouseLeave={() => setHover(false)}>
                         Contato
@@ -61,17 +61,17 @@ function NavBar(props) {
                 <Collapse in={open}>
                     <div id="example-collapse-text position-absolute">
                         <div className="d-flex flex-column dropDownNav">
-                            <Link className={' ' + (hover === ' projetos' ? "hovered" : [])} to="/projetos"
+                            <Link className={'center ' + (hover === 'projetos' ? "hovered" : [])} to="/projetos"
                                 onMouseEnter={() => setHover('projetos')}
                                 onMouseLeave={() => setHover(false)}>
                                 Projetos
                         </Link>
-                            <Link className={' ' + (hover === ' CV' ? "hovered" : [])} to="/curriculo"
+                            <Link className={'center hardCodeCV ' + (hover === 'CV' ? "hovered" : [])} to="/curriculo"
                                 onMouseEnter={() => setHover('CV')}
                                 onMouseLeave={() => setHover(false)}>
                                 CV
                         </Link>
-                            <Link className={' ' + (hover === 'contato' ? "hovered" : [])} to="/contato"
+                            <Link className={'center ' + (hover === 'contato' ? "hovered" : [])} to="/contato"
                                 onMouseEnter={() => setHover('contato')}
                                 onMouseLeave={() => setHover(false)}>
                                 Contato

@@ -87,3 +87,38 @@ a {
   background-color: black;
   border-color: black !important;
 }
+
+
+.hovered::after {
+  color:white;
+  background-image: url(https://eugeniadurante.com/assets/img/link-underline.png);
+  background-size: 45px 15px;
+  background-repeat: no-repeat;
+  content:"⠀";
+  transform: translate(10px, 20px);
+  position: absolute;
+  right: 0;
+  left: 0;
+  /* animation */
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
+}
+
+.center::after {
+  background-position: left;
+  transform: translate(11px, 20px);
+  background-size: 65px 15px;
+
+}
+.hardCodeCV::AFTER {
+  transform: translate(8px, 20px) !important;
+  background-size: 35px 15px;
+}
+
+.hardCodeHOME::AFTER {
+  transform: translate(13px, 20px) !important;
+  background-size: 45px 15px;
+}
