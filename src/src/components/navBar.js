@@ -23,7 +23,7 @@ function NavBar(props) {
     }, [LanguageStatus.language])
 
     return (
-        <div className='p-3 navBar '>
+        <div className='navBar container'>
             <div className="row justify-content-between">
                 <div className="col-10 col-lg-11 row pt-2 desktopNav">
                     <Link className={'col center hardCodeHOME ' + (hover === 'home' ? "hovered" : [])} to="/"

@@ -11,6 +11,9 @@ body {
   height: 100vh;
 }
 
+
+
+
 /* remove text decorations from links */
 :hover{
   font-style: none;
@@ -29,106 +32,165 @@ a {
 
 
 /* Font details */
-  .navBar {
-  font-weight: 600;
-  padding: 2vh 0vw 2vh 5vw !important;
-  }
-  .Title-desktop {
-    font-weight: 800;
-    font-size: 70px
-  }
 
-  .Title-mob {
+
+  .title {
     font-weight: 800;
     font-size: 40px
   }
 
-  .Description-desktop {
-    font-weight: 500;
-    font-size: 30px
-  }
-
-  .Description-mob {
+  .description {
     font-weight: 500;
     font-size: 25px
   }
+  @media screen and (min-width:776px){
+    .title {
+      font-weight: 800;
+      font-size: 70px
+    }
+
+    .description {
+      font-weight: 500;
+      font-size: 30px
+    }
+
+  }
+
 
 /*  NavBar */
-.mobileNav{
-  display: none !important;
-}
-.menuNav{
-  width:35px;
-}
-
-.dropDownNav{
-  padding: 3vh 10vw 3vh 0vh;
-}
-.dropDownNav > *{
-  padding: 3vh 10vw 3vh 0vh;
-}
-
-@media screen and (max-width:776px){
+.navBar {
+  font-weight: 600;
+  padding: 2vh 0vw 2vh 3vw !important;
+  }
   .mobileNav{
-    display:block !important;
+    display: none !important;
   }
-  .desktopNav {
-    display:none !important;
+  .menuNav{
+    width:35px;
+  }
+
+  .dropDownNav{
+    padding: 3vh 10vw 3vh 0vh;
+  }
+  .dropDownNav > *{
+    padding: 3vh 10vw 3vh 0vh;
+  }
+
+  @media screen and (max-width:776px){
+    .mobileNav{
+      display:block !important;
+    }
+    .desktopNav {
+      display:none !important;
+    }
+  }
+
+
+  .borderNAVLangBTN {
+    border: 2px solid !important;
+  }
+
+  .selectedLan {
+    color: white;
+    background-color: black;
+    border-color: black !important;
+  }
+
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  /* hover options on NavBar */
+
+    .hovered::after {
+      color:white;
+      background-image: url(https://eugeniadurante.com/assets/img/link-underline.png);
+      background-size: 45px 15px;
+      background-repeat: no-repeat;
+      content:"⠀";
+      transform: translate(10px, 20px);
+      position: absolute;
+      right: 0;
+      left: 0;
+      /* animation */
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 0.2s;
+    }
+
+    .center::after {
+      background-position: left;
+      transform: translate(11px, 20px);
+      background-size: 65px 15px;
+
+    }
+    .hardCodeCV::AFTER {
+      transform: translate(8px, 20px) !important;
+      background-size: 35px 15px;
+    }
+
+    .hardCodeHOME::AFTER {
+      transform: translate(13px, 20px) !important;
+      background-size: 45px 15px;
+    }
+
+
+
+/* ---------- BootStrap -------- */
+
+@media (min-width: 1450px) {
+  .container {
+    max-width: 1400px !important;
   }
 }
 
+p {
+  margin-bottom: 0.5rem;
+}
+    
+/*-------- Home --------*/
 
-.borderNAVLangBTN {
-  border: 2px solid !important;
+.stackWrapper {
+  width: 70vw;
+  border: 7px solid transparent;
+  padding: 15px;
+  border-image: url('assets/border.fw.png') 30 round;
+  margin:5vh 5vw;
 }
 
-.selectedLan {
-  color: white;
-  background-color: black;
-  border-color: black !important;
+.stackWrapperWrapper {
+  text-align: center;
 }
 
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-
-.hovered::after {
-  color:white;
-  background-image: url(https://eugeniadurante.com/assets/img/link-underline.png);
-  background-size: 45px 15px;
-  background-repeat: no-repeat;
-  content:"⠀";
-  transform: translate(10px, 20px);
-  position: absolute;
-  right: 0;
-  left: 0;
-  /* animation */
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.2s;
-}
-
-.center::after {
-  background-position: left;
-  transform: translate(11px, 20px);
-  background-size: 65px 15px;
+@media (min-width: 776px) {
+  .stackWrapperWrapper{
+    padding-top: 0px;
+  }
+  .stackWrapper{
+    width:40vw;
+  }
+  .techContainer * {
+    padding: 7px !important;
+  }
 
 }
-.hardCodeCV::AFTER {
-  transform: translate(8px, 20px) !important;
-  background-size: 35px 15px;
+
+.techLogo {
+  width:50px;
+  height: 50px;
 }
 
-.hardCodeHOME::AFTER {
-  transform: translate(13px, 20px) !important;
-  background-size: 45px 15px;
+.techContainer  * {
+  font-size:14x !important;
+  font-weight:600;
+  color: rgb(65, 60, 60) !important;
 }
