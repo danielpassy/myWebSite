@@ -22,7 +22,7 @@ function projectView(props) {
                                 some title
                             </div>
                             <div className="CARDText">
-                                Thums dfsdfkjs dfkjdhafkl jashdflkjhas lkfjhasldjkf halskdfh banial Example
+                            ThumsThuThums Thums ThumsThums dfsdfkjs dfkjdhafkl jashdflkjhas lkfjhasldjkf halskdfh banial Example
                             </div>
                             <div className="buttonContainer ">
                                 <button className='blackButton m-1 mr-3'>Test one</button>

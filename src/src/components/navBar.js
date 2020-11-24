@@ -61,6 +61,11 @@ function NavBar(props) {
                 <Collapse in={open}>
                     <div id="example-collapse-text position-absolute">
                         <div className="d-flex flex-column dropDownNav">
+                            <Link className={'center ' + (hover === 'home' ? "hovered" : [])} to="/"
+                                onMouseEnter={() => setHover('projetos')}
+                                onMouseLeave={() => setHover(false)}>
+                                Home
+                            </Link>
                             <Link className={'center ' + (hover === 'projetos' ? "hovered" : [])} to="/projetos"
                                 onMouseEnter={() => setHover('projetos')}
                                 onMouseLeave={() => setHover(false)}>
