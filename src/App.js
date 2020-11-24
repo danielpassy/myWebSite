@@ -47,10 +47,10 @@ class App extends React.Component {
                 <LanguageContext.Provider value={{ ...this.state, changeLanguage: this.changeLanguage }} >
                     <NavBar />
                     <Switch>
-                        <Route path="/" component={MainView} />
                         <Route path="/contato" component={ContatoView} />
                         <Route path="/curriculo" component={CurriculoView} />
                         <Route path="/projetos" component={ProjectView} />
+                        <Route path="/" component={MainView} />
                     </Switch>
                     <Footer />
                 </LanguageContext.Provider>
