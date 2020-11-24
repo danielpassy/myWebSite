@@ -15,16 +15,16 @@ function mainView(props) {
 
 
     return (
-        <div className="container">
-            <div className="title">
-                Olá!
-            </div>
-            <div className="row">
-                <div className="col-8 col-md-7 col-xl-6 description pl-3 pr-3">
+        <div className="container d-flex flex-column flex-md-row flex-lg-row">
+            <div className="col col-md-5 p-0">
+                <div className="title">
+                    Olá!
+                </div>
+                <div className="col-8 col-md-12 col-xl-10 description pl-3 pr-3">
                     Meu nome é Daniel Passy e eu sou desenvolvedor Web
                 </div>
             </div>
-            <div className="d-flex justify-content-md-end justify-content-sm-center">
+            <div className="col col-md-7 pl-0 pr-0 d-flex justify-content-md-end justify-content-sm-center stackWrapperWrapper">
                 <div className="stackWrapper container">
                     <div className="row">
                         <div className="div col-4 text-center">
