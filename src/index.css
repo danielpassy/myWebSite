@@ -41,25 +41,76 @@ p {
     font-size: 40px
   }
 
-  .description *{
-    font-weight: 500;
-    font-size: 22px;
+  .subtitle {
+    font-weight: 600;
+    font-size: 30px;
   }
+
+    .description *{
+      font-weight: 500;
+      font-size: 17px;
+    }
 
   .description {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 17px;
+  }
+
+  .techContainer > * {
+    font-size:14x ;
+    font-weight:600;
+  }
+  .CARDTitle {
+    font-weight: 800;
+    text-transform: capitalize
+  }
+  .CARDText {
+    font-weight: 500;
+    font-size: 17px
+  }
+
+  .CARDText > *{
+    font-weight: 500;
+    font-size: 17px
   }
 
   @media screen and (min-width:776px){
     .title {
       font-weight: 800;
-      font-size: 70px
+      font-size: 50px
+    }
+
+    .subtitle {
+      font-weight: 600;
+      font-size: 24px;
     }
 
     .description {
-      font-weight: 500 !important;
-      font-size: 30px !important;
+      font-weight: 500 ;
+      font-size: 20px ;
+    }
+    
+    .description *{
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .techContainer > * {
+      font-size:14x ;
+      font-weight:600;
+    }
+    .CARDTitle {
+      font-weight: 800;
+      text-transform: capitalize
+    }
+    .CARDText {
+      font-weight: 500;
+      font-size: 16px
+    }
+
+    .CARDText > *{
+      font-weight: 500;
+      font-size: 16px
     }
 
   }
@@ -183,15 +234,12 @@ p {
   }
 }
 
-
 .techLogo {
   width:50px;
   height: 50px;
 }
 
 .techContainer  * {
-  font-size:14x !important;
-  font-weight:600;
   color: rgb(65, 60, 60) !important;
 }
 
@@ -202,16 +250,6 @@ p {
   color: white;
   background-color: rgb(66, 66, 66);
   min-width: 38px;
-}
-
-.CARDTitle {
-  font-weight: 800;
-  text-transform: capitalize
-}
-
-.CARDText {
-  font-weight: 500;
-  font-size: 18px
 }
 
 .cardContainer{

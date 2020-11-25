@@ -5,7 +5,7 @@ import { LanguageContext } from './src/util/context'
 import MainView from './src/mainView'
 import ContatoView from './src/contatoView'
 import ProjectView from './src/projectView'
-import CurriculoView from './src/curriculoView'
+import CurriculoView from './src/curriculo/curriculoView'
 import NavBar from './src/components/navBar'
 import Footer from './src/components/Footer'
 
