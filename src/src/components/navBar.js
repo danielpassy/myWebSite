@@ -62,22 +62,26 @@ function NavBar(props) {
                     <div id="example-collapse-text position-absolute">
                         <div className="d-flex flex-column dropDownNav">
                             <Link className={'center ' + (hover === 'home' ? "hovered" : [])} to="/"
-                                onMouseEnter={() => setHover('projetos')}
+                                onMouseEnter={() => {setHover('home')}}
+                                onClick ={() => setOpen(!open)}
                                 onMouseLeave={() => setHover(false)}>
                                 Home
                             </Link>
                             <Link className={'center ' + (hover === 'projetos' ? "hovered" : [])} to="/projetos"
                                 onMouseEnter={() => setHover('projetos')}
+                                onClick ={() => setOpen(!open)}
                                 onMouseLeave={() => setHover(false)}>
                                 Projetos
                         </Link>
                             <Link className={'center hardCodeCV ' + (hover === 'CV' ? "hovered" : [])} to="/curriculo"
                                 onMouseEnter={() => setHover('CV')}
+                                onClick ={() => setOpen(!open)}
                                 onMouseLeave={() => setHover(false)}>
                                 CV
                         </Link>
                             <Link className={'center ' + (hover === 'contato' ? "hovered" : [])} to="/contato"
                                 onMouseEnter={() => setHover('contato')}
+                                onClick ={() => setOpen(!open)}
                                 onMouseLeave={() => setHover(false)}>
                                 Contato
                         </Link>

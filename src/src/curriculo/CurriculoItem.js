@@ -10,7 +10,7 @@ function CurriculoItem(props) {
             </div>
             <div className="pl-2">
                 {props.date ? (
-                    <div className='CARDDate '>
+                    <div className='CARDSubTitle Date '>
                         {props.date}
                     </div>) : []
                 }

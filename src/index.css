@@ -21,7 +21,9 @@ body {
 a {
   color: black;
   text-decoration: none !important; /* no underline */
+  outline: none; 
 }
+
 
 @media (min-width: 1450px) {
   .container {
@@ -41,15 +43,12 @@ p {
     font-size: 40px
   }
 
+  
   .subtitle {
     font-weight: 600;
     font-size: 30px;
   }
-
-    .description *{
-      font-weight: 500;
-      font-size: 17px;
-    }
+  
 
   .description {
     font-weight: 500;
@@ -62,16 +61,21 @@ p {
   }
   .CARDTitle {
     font-weight: 800;
-    text-transform: capitalize
+    text-transform: capitalize;
+    font-size: 17px;
+  }
+  .CARDSubTitle {
+    font-weight: 600;
+    font-size: 17px;
   }
   .CARDText {
     font-weight: 500;
-    font-size: 17px
+    font-size: 18px
   }
 
   .CARDText > *{
     font-weight: 500;
-    font-size: 17px
+    font-size: 18px
   }
 
   @media screen and (min-width:776px){
@@ -82,35 +86,34 @@ p {
 
     .subtitle {
       font-weight: 600;
-      font-size: 24px;
+      font-size: 30px;
     }
 
     .description {
       font-weight: 500 ;
-      font-size: 20px ;
+      font-size: 22px ;
     }
-    
-    .description *{
-      font-weight: 500;
-      font-size: 16px;
-    }
-
     .techContainer > * {
       font-size:14x ;
       font-weight:600;
     }
     .CARDTitle {
       font-weight: 800;
-      text-transform: capitalize
+      text-transform: capitalize;
+      font-size: 17px;
+    }
+    .CARDSubTitle {
+      font-weight: 600;
+      font-size: 17px;
     }
     .CARDText {
       font-weight: 500;
-      font-size: 16px
+      font-size: 16px;
     }
 
     .CARDText > *{
       font-weight: 500;
-      font-size: 16px
+      font-size: 16px;
     }
 
   }
@@ -210,24 +213,33 @@ p {
     
 /*-------------------- Home ------------------*/
 
-.stackWrapper {
+.techWrapper {
   width: 70vw;
   border: 7px solid transparent;
   padding: 15px;
-  border-image: url('assets/border.fw.png') 30 round;
+  border-image: url('assets/border.fw.png') 20% stretch;
   margin:5vh 5vw;
+  position: relative;
 }
 
-.stackWrapperWrapper {
+.techWrapperWrapper {
   text-align: center;
 }
 
+.techTitle {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: -12%;
+  font-size: 34px;
+}
+
 @media (min-width: 768px) {
-  .stackWrapper{
+  .techWrapper{
     width:40vw;
   }
-  .stackWrapperWrapper{
-    padding-top: 20vh ;
+  .techWrapperWrapper{
+    padding-top: 15vh ;
   }
   .techContainer * {
     padding: 7px !important;

@@ -20,12 +20,15 @@ function mainView(props) {
                 <div className="title">
                     Olá!
                 </div>
-                <div className="col-8 col-md-12 col-xl-10 description pl-3 pr-3">
+                <div className="col-8 col-md-12 col-xl-10 description pl-2 pr-3">
                     Meu nome é Daniel Passy e eu sou desenvolvedor Web
                 </div>
             </div>
-            <div className="col col-md-7 pl-0 pr-0 d-flex justify-content-md-end justify-content-sm-center stackWrapperWrapper">
-                <div className="stackWrapper container">
+            <div className="col col-md-7 pl-0 pr-0 d-flex justify-content-md-end justify-content-sm-center techWrapperWrapper">
+                <div className="techWrapper container">
+                    <div className='techTitle subtitle'>
+                        Stack
+                    </div>
                     <div className="row">
                         <div className="div col-4 text-center">
                             <div className="techContainer">

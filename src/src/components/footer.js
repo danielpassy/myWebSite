@@ -1,9 +1,9 @@
 import React from 'react'
+import { SocialIcon } from 'react-social-icons';
 
+function Footer(props) {
 
-function Footer(props){
-
-    const footerContainer = {
+    const styleFooter = {
         backgroundColor: 'red',
         position: 'fixed',
         left: 0,
@@ -13,13 +13,22 @@ function Footer(props){
         color: 'white',
         textAlign: 'center'
     }
-    return(
-        <div style={footerContainer} className='footer'>
+
+    const styleIcons = {}
+    const fgColorIcons = "rgba(200, 200, 200, 0.3)"
+    const bgColorIcons = "rgba(200, 200, 200, 1)"
+
+    return (
+        <div style={styleFooter} className='footer'>
             <div className="container">
                 <div className="row">
-                    <div className="col-3">I like boyx</div>
                     <div className="col-3"></div>
-                    <div className="col-3">Hello</div>
+                    <div className="col d-flex  justify-content-end pt-1 pb-1">Me dê um oi!
+                        <div className="pl-2 "><SocialIcon style={{ height: 25, width: 25 }} fgColor={fgColorIcons} bgColor={bgColorIcons} url="mailto:daniel.passy@gmail.com" /></div>
+                        <div className="pl-2 "><SocialIcon style={{ height: 25, width: 25 }} fgColor={fgColorIcons} bgColor={bgColorIcons} url="https://github.com/danielpassy" /></div>
+                        <div className="pl-2 "><SocialIcon style={{ height: 25, width: 25 }} fgColor={fgColorIcons} bgColor={bgColorIcons} url="https://www.linkedin.com/in/daniel-mattos-passy-671b8a69/" /></div>
+                        <div className="pl-2 "><SocialIcon style={{ height: 25, width: 25 }} fgColor={fgColorIcons} bgColor={bgColorIcons} url="https://api.whatsapp.com/send/?phone=5521997570933&text&app_absent=0" /></div>
+                    </div>
                 </div>
             </div>
         </div>
