@@ -229,7 +229,7 @@ p {
 }
 
 .techWrapperWrapper {
-  text-align: center;
+  justify-content: center;
 }
 
 .techTitle {
