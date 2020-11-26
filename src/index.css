@@ -175,7 +175,7 @@ p {
       background-size: 45px 15px;
       background-repeat: no-repeat;
       content:"⠀";
-      transform: translate(10px, 20px);
+      transform: translate(10px, 0px);
       position: absolute;
       right: 0;
       left: 0;
@@ -187,6 +187,12 @@ p {
       animation-duration: 0.2s;
     }
 
+ 
+  @-moz-document url-prefix(){
+    .hovered::after {
+          transform: translate(10px, 20px);
+        }
+    }
     .center::after {
       background-position: left;
       transform: translate(11px, 20px);
