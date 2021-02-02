@@ -1,5 +1,5 @@
 # myWebSite
 
-Code for my website.
-Built using React, create-react-app
-Danielpassy.com
+Code for my website.<br>
+Built using React, create-react-app<br>
+www.danielpassy.com
