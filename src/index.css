@@ -52,7 +52,7 @@ p {
 
   .description {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 30px;
   }
 
   .techContainer > * {
@@ -78,6 +78,10 @@ p {
     font-size: 18px
   }
 
+  .blackButton {
+    font-size: 20px 
+  }
+
   @media screen and (min-width:776px){
     .title {
       font-weight: 800;
@@ -91,7 +95,7 @@ p {
 
     .description {
       font-weight: 500 ;
-      font-size: 22px ;
+      font-size: 40px ;
     }
     .techContainer > * {
       font-size:14x ;

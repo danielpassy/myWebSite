@@ -73,11 +73,11 @@ function NavBar(props) {
                                 onMouseLeave={() => setHover(false)}>
                                 Projetos
                         </Link>
-                            <Link className={'center hardCodeCV ' + (hover === 'CV' ? "hovered" : [])} to="/curriculo"
-                                onMouseEnter={() => setHover('CV')}
+                            <Link className={'center hardCodeCV ' + (hover === 'curriculo' ? "hovered" : [])} to="/curriculo"
+                                onMouseEnter={() => setHover('curriculo')}
                                 onClick ={() => setOpen(!open)}
                                 onMouseLeave={() => setHover(false)}>
-                                CV
+                                Currículo
                         </Link>
                             <Link className={'center ' + (hover === 'contato' ? "hovered" : [])} to="/contato"
                                 onMouseEnter={() => setHover('contato')}
